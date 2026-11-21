@@ -103,12 +103,12 @@ Pruebas: el ajolote feliz con el botón de avisos, dar de comer sube la saciedad
 
 ### Pantalla del ajolote
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="300" height="650" alt="WhatsApp Image 2026-11-21 at 00 13 43" src="https://github.com/user-attachments/assets/1373260c-6213-42b4-b382-bc80b1d8545f" />
 
 ### Explicación propia antes de pedir el permiso
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="300" height="650" alt="WhatsApp Image 2026-11-21 at 00 13 43 (1)" src="https://github.com/user-attachments/assets/fa99734b-0d5a-4d1a-809f-81ffc53fb5f8" />
 
 ### Notificación recibida
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="300" height="650" alt="WhatsApp Image 2026-11-21 at 00 13 43 (2)" src="https://github.com/user-attachments/assets/3bf46e69-cfd5-4f6a-a2ce-e9354c5a4f29" />
