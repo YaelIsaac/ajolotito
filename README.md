@@ -4,13 +4,10 @@
 **Alumno:** González López Yael Isaac
 **Fecha:** 20 de noviembre de 2026
 
-## Descripción
-
-Mascota virtual (un ajolote) que da hambre con el tiempo y avisa con notificaciones locales cuando tiene hambre, cuando está famélico y con una sorpresa diaria. La saciedad no se guarda como un número que baja con un temporizador: se guarda desde cuándo y cuánto comió, y se calcula, así que funciona aunque la app esté cerrada. Los avisos respetan horas de silencio (22:00 a 8:00), usan canales que el usuario puede apagar por separado, tienen ids fijos para reemplazar y cancelar sin duplicados, y validan el payload al tocarlos. El permiso se pide en contexto, con una explicación propia antes del diálogo del sistema, y si el usuario lo niega no se le insiste. Todo se desarrolló con TDD, aislando el plugin detrás de una interfaz para probar sin teléfono.
 
 ## Estructura del proyecto
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="100" height="259" alt="image" src="https://github.com/user-attachments/assets/b10ba789-b2a1-41c6-acfa-eb19e6316818" />
 
 ## Pruebas de casos (éxito y fallo)
 
@@ -20,11 +17,11 @@ Pruebas: saciedad calculada en el tiempo, que nunca baja de 0, estados de ánimo
 
 ### Éxito (todas en verde)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="403" height="386" alt="image" src="https://github.com/user-attachments/assets/e112d38f-ce57-48b2-9250-a4f506f5036f" />
 
 ### Fallo (empieza en 100 y baja 10 puntos por hora)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="404" height="295" alt="image" src="https://github.com/user-attachments/assets/c941a621-8081-4918-81fa-62b210350ae4" />
 
 ## Pruebas de política y payload (12) · test/politica_payload_test.dart
 
@@ -32,11 +29,11 @@ Pruebas: horas de silencio, mover un aviso fuera del silencio y payload seguro (
 
 ### Éxito (todas en verde)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="399" height="341" alt="image" src="https://github.com/user-attachments/assets/aee67512-ae99-4c1e-9097-43c6e279d9d3" />
 
 ### Fallo (de 22 a 7:59 hay silencio)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="404" height="264" alt="image" src="https://github.com/user-attachments/assets/ec23adc1-add5-46ac-871b-ddf7670e07ac" />
 
 ## Pruebas del planificador (13) · test/planificador_test.dart
 
@@ -44,11 +41,11 @@ Pruebas: qué avisos programar y a qué hora (hambre, crítico y sorpresas), sin
 
 ### Éxito (todas en verde)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="403" height="334" alt="image" src="https://github.com/user-attachments/assets/db6d7859-4a91-472f-b0ef-d45318ed921a" />
 
 ### Fallo (día normal: hambre 16:00, sorpresa 18:00, crítico 18:30)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="401" height="326" alt="image" src="https://github.com/user-attachments/assets/e4d642b7-6edd-4055-934a-d70b9d040e23" />
 
 ## Pruebas del permiso (6) · test/permiso_test.dart
 
@@ -56,11 +53,11 @@ Pruebas: tres estados (sin preguntar, concedido y denegado), no pedir dos veces 
 
 ### Éxito (todas en verde)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="400" height="230" alt="image" src="https://github.com/user-attachments/assets/5dab2612-a287-4301-bb66-d1400bc62db5" />
 
 ### Fallo (al inicio nunca hemos preguntado)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="402" height="233" alt="image" src="https://github.com/user-attachments/assets/0279807b-2bca-4e11-b123-e4b8132d550a" />
 
 ## Pruebas del servicio (14) · test/servicio_test.dart
 
@@ -68,11 +65,11 @@ Pruebas: guardar y recuperar al ajolote, sincronizar avisos en segundo plano, ca
 
 ### Éxito (todas en verde)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="400" height="404" alt="image" src="https://github.com/user-attachments/assets/a8dc3538-1155-434c-afcf-9ebd6fadbfef" />
 
 ### Fallo (la primera vez crea al ajolote y lo guarda)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="401" height="331" alt="image" src="https://github.com/user-attachments/assets/371a7b5d-473b-46d2-b2b8-507f2ccba9c8" />
 
 ## Pruebas del ViewModel (10) · test/vm_test.dart
 
@@ -80,11 +77,11 @@ Pruebas: no pedir permiso al arrancar, activar avisos en contexto, alimentar, to
 
 ### Éxito (todas en verde)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="400" height="358" alt="image" src="https://github.com/user-attachments/assets/78aa5cfa-e72e-4635-8573-51294520118a" />
 
 ### Fallo (al iniciar NO pide permiso)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="402" height="276" alt="image" src="https://github.com/user-attachments/assets/ac40331b-6ed2-47d5-be0a-bb4ea3d3acaa" />
 
 ## Pruebas de pantalla (3) · test/pantalla_test.dart
 
@@ -92,15 +89,15 @@ Pruebas: el ajolote feliz con el botón de avisos, dar de comer sube la saciedad
 
 ### Éxito (todas en verde)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="401" height="268" alt="image" src="https://github.com/user-attachments/assets/91b348c8-fdff-4bd3-8a57-eb1e8ccd4328" />
 
 ### Fallo (muestra al ajolote feliz y el botón para activar avisos)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="398" height="364" alt="image" src="https://github.com/user-attachments/assets/ed3ca338-dbff-4557-847f-44085c0e3bb0" />
 
 ## Todas las pruebas en verde (74)
 
-<!-- PEGA AQUÍ LA CAPTURA -->
+<img width="283" height="50" alt="image" src="https://github.com/user-attachments/assets/7f17f227-fd76-4e92-aca0-f17cfb6b07fb" />
 
 ## Evidencia de la aplicación
 
@@ -115,7 +112,3 @@ Pruebas: el ajolote feliz con el botón de avisos, dar de comer sube la saciedad
 ### Notificación recibida
 
 <!-- PEGA AQUÍ LA CAPTURA -->
-
-## Conclusión
-
-Con TDD las notificaciones dejaron de ser algo que "solo se prueba en el teléfono": el plugin quedó detrás de una interfaz y toda la lógica (cuándo avisar, horas de silencio, ids fijos, payload seguro y permiso en tres estados) se probó en segundos con falsos. Las capturas de fallo demuestran que las pruebas sí detectan errores. Calcular la saciedad en lugar de guardarla hace que el ajolote funcione aunque la app esté cerrada, y respetar el permiso y el silencio hace que los avisos ayuden en lugar de molestar.
